@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+.body-accueil {
+
+ background-image: url(https://cdn.shortpixel.ai/spai/q_lossless+ret_img+to_webp/https://www.stationx.net/wp-content/uploads/2022/12/Nmap-Cheat-Sheet-2.jpg);
+}
+
+
+.animate-moveBackground {
+  background-image: url('https://img2.helpnetsecurity.com/posts/nmap-logo.jpg');
+  background-repeat: repeat-x;
+  animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 50%;
+  }
+
+    25% {
+      background-position: 50% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    75% {
+      background-position: 50% 100%;
+    }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  
